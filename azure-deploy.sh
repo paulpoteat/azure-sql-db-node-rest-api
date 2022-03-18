@@ -4,8 +4,8 @@ set -euo pipefail
 
 # Make sure these values are correct for your environment
 resourceGroup="dm-api-04"
-appName="dm-api-04"
-storageName="dmapi04"
+appName="bell-dm-api-04"
+storageName="belldmapi04"
 location="WestUS2" 
 
 # Change this if you are using your own github repository
@@ -49,10 +49,10 @@ az functionapp create \
     --consumption-plan-location $location \
     --deployment-source-url $gitSource \
     --deployment-source-branch main \
-    --functions-version 2 \
+    --functions-version 4 \
     --os-type Windows \
     --runtime node \
-    --runtime-version 10 \
+    --runtime-version 16 \
 
 echo "Configuring Connection String...";
 settings=(db_server db_database db_user db_password)
