@@ -4,7 +4,7 @@
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "db_server": "b-sql-main.database.windows.net",
-    "db_database": "<database>",
+    "db_database": "WideWorldImporters-Standard",
     "db_user": "bell-administrator",
     "db_password": "v97G60mcYx3L"
   }
